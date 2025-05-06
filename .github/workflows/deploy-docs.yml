@@ -30,9 +30,7 @@ jobs:
           cache: yarn
 
       - name: Install Deps
-        run: |-
-          corepack enable
-          yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Build Docs
         env:
